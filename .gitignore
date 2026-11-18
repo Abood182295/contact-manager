@@ -1,0 +1,10 @@
+# Real credentials must never be committed
+config/config.php
+
+# Local databases / logs / editor files
+*.sqlite
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.zip

@@ -1,0 +1,7 @@
+# Apache: block direct web access to application code and SQL, disable directory listing.
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(config|core|models|controllers|views|database|scripts)(/|$) - [F,L]
+</IfModule>
